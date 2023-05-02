@@ -28,7 +28,9 @@ public class StringCompare {
 
         if (s3.equalsIgnoreCase(s4)) {
             System.out.printf(
-                    "%s equals %s with case ignored%n", s3, s4);
+                    "%s equals %s with case ignored%n",
+                    s3, s4
+            );
         } else {
             System.out.println("s3 does not equal s4");
         }
@@ -39,10 +41,9 @@ public class StringCompare {
         System.out.printf("%ns4.compareTo(s) is %d", s3.compareTo(s4));
         System.out.printf("%ns3.compareTo(s) is %d%n%n", s3.compareTo(s3));
 
-        if( s3.regionMatches(true, 0, s4, 0, 5)) {
+        if (s3.regionMatches(true, 0, s4, 0, 5)) {
             System.out.println("First five characters of s3 match s4 with case ignored!");
-        }
-        else {
+        } else {
             System.out.println("First five characters of s3 do not match the first five of s4!");
         }
     } // main
